@@ -2,13 +2,13 @@
 
 import logging
 import time
-from yeelightsunflower.main import Hub
+from sonoff.main import Hub
 
 ZID_TO_TEST = '3CB8'
 SECONDS_TO_WAIT = 2.95
 
 # Setup logging
-LOGGER = logging.getLogger('yeelightsunflower')
+LOGGER = logging.getLogger('sonoff')
 LOGGER.setLevel(logging.DEBUG)
 LOGGER.addHandler(logging.StreamHandler())
 

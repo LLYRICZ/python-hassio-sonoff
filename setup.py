@@ -34,10 +34,14 @@ setup(
     author=__author__,
     packages=['sonoff'],
     classifiers=classifiers,
-    url='https://github.com/lindsaymarkward/python-yeelight-sunflower',
-    author_email='lindsay.ward@jcu.edu.au',
-    maintainer='Lindsay Ward',
-    maintainer_email='lindsay.ward@jcu.edu.au',
+    # use the URL to the github repo
+    url='https://github.com/gerswin/python-hassio-sonoff',
+    # I'll explain this in a second
+    download_url='https://github.com/gerswin/python-hassio-sonoff/archive/0.1.tar.gz',
+    author_email='gerswin@parawebs.com',
+    maintainer='Gerswin Pineda',
+    maintainer_email='gerswin@parawebs.com',
     description='Python package for interacting with Yeelight Sunflower bulbs',
-    long_description=long_description
+    long_description=long_description,
+    keywords=['sonoff', 'hassio', 'iot']  # arbitrary keywords
 )

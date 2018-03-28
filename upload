@@ -1,0 +1,12 @@
+ git checkout master
+$ # edit version from x.y.z.dev0 to x.y.z in e.g. __init__.py
+$ git add -p
+$ git commit -m "Bump to x.y.z."
+$ git tag -a vx.y.z -m "Tag x.y.z."
+$ python setup.py sdist bdist_wheel
+$ python setup.py register # if needed
+$ twine upload dist/*
+$ # edit version from x.y.z to x.y.z+1.dev0 in e.g. __init__.py
+$ git add -p
+$ git commit -m "Bump to x.y.z+1.dev0."
+$ git push origin master --tags

@@ -9,9 +9,9 @@ Project repo: https://github.com/lindsaymarkward/python-yeelight-sunflower
 PyPI: https://pypi.python.org/pypi/yeelightsunflower
 """
 
-from yeelightsunflower.main import Hub, Bulb
+from sonoff.main import Hub, Bulb
 
-__title__ = 'yeelightsunflower'
-__version__ = '0.0.10'
-__author__ = 'Lindsay Ward'
+__title__ = 'sonoff'
+__version__ = '0.0.1'
+__author__ = 'Gerswin Pineda'
 __license__ = 'MIT'
