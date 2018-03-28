@@ -1,0 +1,18 @@
+language: python
+python:
+  - "3.5"
+env:
+  - TOXENV=py27
+#  - TOXENV=py34
+  - TOXENV=py35
+  - TOXENV=lint
+#  - TOXENV=docs
+install:
+  - pip install tox
+script:
+  - tox
+matrix:
+  allow_failures:
+    - env: TOXENV=lint
+#    - env: TOXENV=docs
+sudo: false
